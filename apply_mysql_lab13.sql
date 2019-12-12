@@ -22,6 +22,9 @@
 source /home/student/Data/cit225/mysql/lib/create_mysql_store_ri2.sql;
 source /home/student/Data/cit225/mysql/lib/seed_mysql_store_ri2.sql;
 
+-- Open log file.
+TEE apply_mysql_lab13.txt;
+
 -- Show tables
 show tables;
 
@@ -34,3 +37,5 @@ ADD (item_desc TEXT, item_blob MEDIUMBLOB);
 -- Describe the table
 describe item;
 
+-- Close log file
+NOTEE;

@@ -1,0 +1,41 @@
++---------------------+
+| Tables_in_studentdb |
++---------------------+
+| address             |
+| common_lookup       |
+| contact             |
+| contacts            |
+| current_rental      |
+| item                |
+| member              |
+| rating_agency       |
+| rental              |
+| rental_item         |
+| street_address      |
+| system_user         |
+| telephone           |
++---------------------+
+13 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.13 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
++-------------------+------------------+------+-----+---------+----------------+
+| Field             | Type             | Null | Key | Default | Extra          |
++-------------------+------------------+------+-----+---------+----------------+
+| item_id           | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+| item_barcode      | char(18)         | NO   |     | NULL    |                |
+| item_type         | int(10) unsigned | NO   | MUL | NULL    |                |
+| item_title        | char(60)         | NO   |     | NULL    |                |
+| item_subtitle     | char(60)         | YES  |     | NULL    |                |
+| item_rating_id    | int(10) unsigned | NO   | MUL | NULL    |                |
+| item_release_date | date             | NO   |     | NULL    |                |
+| created_by        | int(10) unsigned | NO   | MUL | NULL    |                |
+| creation_date     | date             | NO   |     | NULL    |                |
+| last_updated_by   | int(10) unsigned | NO   | MUL | NULL    |                |
+| last_update_date  | date             | NO   |     | NULL    |                |
+| item_desc         | text             | YES  |     | NULL    |                |
+| item_blob         | mediumblob       | YES  |     | NULL    |                |
++-------------------+------------------+------+-----+---------+----------------+
+13 rows in set (0.01 sec)
+
